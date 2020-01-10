@@ -2,18 +2,22 @@
 #include<string>
 using namespace std;
 
-string conpress(string word)
-{   string result
-    int min =0;
-    int re=0;
-    while (min < word.size())
+string conpress(string q)
+{
+    int x = 0;
+    int r = 0;
+    int y = q.size();
+    string result;
+    int t[y];
+    while (x <= y)
     {
-        string result[re] = word[min];
-        min = min +3;
-        re++;
+        t[r]= x;
+        result[t[r]] = q[x];
+        r++;
+        x=x+3;
+        
     }
- return result;
-
+return result;
 }
 
 int main()
