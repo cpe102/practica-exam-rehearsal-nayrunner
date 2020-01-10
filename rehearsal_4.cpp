@@ -1,6 +1,18 @@
 #include <iostream>
+#include<string>
+using namespace std;
 
-//Write compress() here.
+string conpress(string word)
+{   string result
+    int min =0;
+    while (min < word.size())
+    {
+        string result = word[min];
+        min = min +3;
+    }
+ return result;
+
+}
 
 int main()
 {
