@@ -5,10 +5,12 @@ using namespace std;
 string conpress(string word)
 {   string result
     int min =0;
+    int re=0;
     while (min < word.size())
     {
-        string result = word[min];
+        string result[re] = word[min];
         min = min +3;
+        re++;
     }
  return result;
 
