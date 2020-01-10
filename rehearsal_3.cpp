@@ -2,14 +2,14 @@
 #include <math.h>
 using namespace std;
 
-double sumSqrt(double N)
-{   double  result=1,x=2;
+float sumSqrt(float N)
+{   float  result=1,x=2;
     if(N<=0){
         return 0;
     }
     else{
      while(x<N){
-     	double root = sqrt(x);
+     	float root = sqrt(x);
          result = result + (1/root);
          x++ ;
      }
