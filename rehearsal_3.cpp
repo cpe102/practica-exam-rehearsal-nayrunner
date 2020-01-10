@@ -1,13 +1,16 @@
 #include <iostream>
 #include <math.h>
-double sumsqrt(double N)
-{   double  result=1,x=2,root = sqrt(x);
+using namespace std;
+
+double sumSqrt(double N)
+{   double  result=1,x=2;
     if(N<=0){
         return 0;
     }
     else{
      while(x<N){
-         result = result + 1/root ;
+     	double root = sqrt(x);
+         result = result + (1/root);
          x++ ;
      }
      return result;
