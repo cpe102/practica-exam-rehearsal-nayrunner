@@ -8,14 +8,11 @@ string conpress(string q)
     int r = 0;
     int y = q.size();
     string result;
-    int t[y];
-    while (x <= y)
+    while (x < y)
     {
-        t[r]= x;
-        result[t[r]] = q[x];
+        result[r] = q[x];
         r++;
-        x=x+3;
-        
+        x=x+3; 
     }
 return result;
 }
